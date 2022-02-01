@@ -21,3 +21,5 @@ i) Disable "Force User Authentication" option at administrator -> security in so
 ii) Before running sonar-scanner command on cmd, ass its path to Environment variable -> System variable -> path as 'C:\sonar-scanner\bin' and to Environment variable -> System variable -> New ->
 variable : SONAR_RUNNER_HOME
 value: 'C:\sonar-scanner'
+
+iii) To re-scan the project file on sonar, rebuild the project, then run the sonar-scanner command in the project directory.
