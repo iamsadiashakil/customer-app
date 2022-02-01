@@ -11,9 +11,9 @@ _java -jar mobile-app-ws-0.0.1-SNAPSHOT.jar_
 
 # Execute Sonar Qube:
 1) Run Sonar Qube by running StartSonar.bat file present in SonarQube bin directory
-2) place a sonar-project file in root directory of springboot project
+2) Place a sonar-project file in root directory of springboot project
 3) Run sonar-scanner command in project directory to scan the project
-4) check the project in localhost:9000 url
+4) Check the project in localhost:9000 url
 
 ## Note
 i) Disable "Force User Authentication" option at administrator -> security in sonar qube webpage and save it.
