@@ -1,4 +1,4 @@
-# customer-app
+# Customer-App
 
 To find tomcat and other dependencies version use this maven command:-
 _mvn dependency:tree_
