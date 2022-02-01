@@ -17,6 +17,7 @@ _java -jar mobile-app-ws-0.0.1-SNAPSHOT.jar_
 
 ## Note
 i) Disable "Force User Authentication" option at administrator -> security in sonar qube webpage and save it.
+
 ii) Before running sonar-scanner command on cmd, ass its path to Environment variable -> System variable -> path as 'C:\sonar-scanner\bin' and to Environment variable -> System variable -> New ->
 variable : SONAR_RUNNER_HOME
 value: 'C:\sonar-scanner'
