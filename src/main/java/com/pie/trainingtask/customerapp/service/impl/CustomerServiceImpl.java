@@ -9,8 +9,7 @@ import com.pie.trainingtask.customerapp.mapper.CustomerMapper;
 import com.pie.trainingtask.customerapp.mapper.ProductMapper;
 import com.pie.trainingtask.customerapp.repository.CustomerRepository;
 import com.pie.trainingtask.customerapp.service.CustomerService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,9 +17,9 @@ import java.util.List;
 
 
 @Service
+@Slf4j
 public class CustomerServiceImpl implements CustomerService {
 
-    private final Logger LOGGER = (Logger) LoggerFactory.getLogger(this.getClass());
     @Autowired
     CustomerRepository customerRepository;
 
@@ -41,10 +40,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer getCustomer(Long id) {
 
-        LOGGER.debug("This is a debug message");
-        LOGGER.info("This is an info message");
-        LOGGER.warn("This is a warn message");
-        LOGGER.error("This is an error message");
+        log.debug("This is a debug message");
+        log.info("This is an info message");
+        log.warn("This is a warn message");
+        log.error("This is an error message");
 
         return customerRepository.findById(id).map(customerMapper::map).orElseThrow();
     }
