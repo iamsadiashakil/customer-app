@@ -161,6 +161,5 @@ Swagger is enabled with Springfox.
 To package the application:
 
 ```bash
-mvn clean install
-mvn spring-boot:run
+mvn clean package
 ```
